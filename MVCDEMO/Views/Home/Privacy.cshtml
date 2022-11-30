@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<p>
+    @ViewData["message"]
+
+</p>
+<p>
+    @ViewData["name"]
+</p>
+<p>
+    @ViewData["Per"]
+</p>
+<p>
+    <ul>
+        @foreach (string item in (IEnumerable<string>)ViewData["color"])
+        {
+            <li>
+                @item
+            </li>
+        }
+
+    </ul>
+</p>
+<h3>Use of ViewBag</h3>
+<p>
+    @ViewBag.Username ,  @ViewBag.Email
+</p>
+<p>
+    <ul>
+        @foreach (string item in ViewBag.color)
+        {
+            <li>
+                @item
+            </li>
+        }
+
+    </ul>
+</p>
+
+<p>Use this page to detail your site's privacy policy.</p>

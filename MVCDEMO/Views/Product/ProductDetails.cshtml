@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "ProductDetails";
+}
+
+<h1>ProductDetails</h1>
+
+
+<h1>Thanks for Survey</h1>
+
+<p>
+    Your Id : @ViewBag.Id
+</p>
+<p>
+    Your Name : @ViewBag.Name
+</p>
+<p>
+    Your Company_Name : @ViewBag.Company_Name
+</p>
+<p>
+    Your Product_price : @ViewBag.Price
+</p>
+<p>
+    Hobbies :
+    <ul>
+        @foreach (var item in ViewBag.Company_Name)
+        {
+            <li>
+                @item
+            </li>
+        }
+    </ul>
+</p>
+<p>
+    Add in Survey : @ViewBag.Option
+</p>
+            ViewBag.Id = form["id"];
+            ViewBag.Name = form["name"];
+            ViewBag.Company_Name = form["company_Name"];
+            ViewBag.Price = form["Price"];
+            ViewBag.Option = form["option"];

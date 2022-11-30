@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>Employee List</h1>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Emp Id</th>
+        <th>Emp Name</th>
+        <th>Designation</th>
+        <th>salary</th>
+    </tr>
+    @foreach (Employee e in (IEnumerable<Employee>)ViewData["emplist"])
+    {
+        <tr>
+            <td>@e.Id</td>
+            <td>@e.name</td>
+            <td>@e.Designation</td>
+            <td>@e.Salary</td>
+
+        </tr>
+    }
+</table>
+
+
+<h1>Employee List using View bag</h1>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Emp Id</th>
+        <th>Emp Name</th>
+        <th>Designation</th>
+        <th>salary</th>
+    </tr>
+    @foreach (Employee e in ViewBag.Emplist)
+    {
+        <tr>
+            <td>@e.Id</td>
+            <td>@e.name</td>
+            <td>@e.Designation</td>
+            <td>@e.Salary</td>
+
+        </tr>
+    }
+</table>
+
+

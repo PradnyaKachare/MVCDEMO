@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Product";
+}
+
+<h1>Product</h1>
+
+@using (Html.BeginForm())
+{
+    <p>
+        <label>Enter Your Id</label>
+        @Html.TextBox("id");
+    </p>
+    <p>
+        <label>Enter Product Name</label>
+        @Html.TextBox("name");
+    </p>   
+
+    <p>
+        <label>select Company Name</label>
+        <input type="radio" name="company_Name" value=" Dell" />
+        <input type="radio" name="company_Name" value=" HCL" />
+        <input type="radio" name="company_Name" value=" Lenovo" />
+    </p>
+    
+
+    <p>
+        <label>Enter Product Price</label>
+        @Html.TextBox("price");
+    </p>
+
+    <p>
+        <label>Do you want to participet in survey ?</label>
+        @Html.DropDownList("option");
+    </p>
+    <p>
+        <input type="submit" value="Save" class=" btn-primary" />
+    </p>
+
+}

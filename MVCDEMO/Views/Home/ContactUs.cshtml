@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "ContactUs";
+}
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="header"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    @*  <section class="frm">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <h3>ADD YOUR Feedback?</h3>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Contact</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Write Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121071.47970356139!2d73.81830158369412!3d18.507029613942063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c01b4c092d2d%3A0x7c010136a378ae2a!2sThinkQuotient%20Software%20Private%20Limited!5e0!3m2!1sen!2sin!4v1668076155636!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    *@
+
+</body>
+</html>
+
+
+@using (Html.BeginForm())
+{
+    <h3>ADD YOUR Feedback?</h3>
+    
+    <p>
+        <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full name">
+    </p>
+
+    <p>
+        <label for="exampleFormControlInput1" class="form-label">Contact</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile number">
+    </p>
+
+    <p>
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </p>
+
+    <p>
+        <label for="exampleFormControlTextarea1" class="form-label">Write Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </p>
+
+    <p>
+        <button type="button" class="btn btn-primary">Send</button>
+    </p>
+}
